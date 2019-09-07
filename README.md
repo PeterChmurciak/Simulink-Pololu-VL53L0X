@@ -26,13 +26,13 @@ You should see the path to the file `PololuVL53L0X.mexw64` located in the `Polol
 
 * Firstly, you have to change the execution mode of your Simulink model from `Normal` to `External` and choose your board from the list located in `Model Configuration Parameters` - `Hardware Implementation` - `Hardware board:` - for example `Arduino UNO`
  
-* The next thing you need to do, is to add the `S-function block` to the model. Using `Library Browser` it can be found in `Simulink/User-Defined Functions`. When added, change its parameters followingly: 
+* The next thing you need to do, is to add the `S-function` block to the model. Using `Library Browser` it can be found in `Simulink/User-Defined Functions`. When added, change its parameters followingly: 
   ```
   S-function name: PololuVL53L0X
   S-function modules: 'PololuVL53L0X_wrapper'
   ```  
   
-* Now connect the output port of `S-function block` to a `Display` or a `Scope` block and press `Run` to see if everything works as it should
+* Now connect the output port of `S-function` block to a `Display` or a `Scope` block and press `Run` to see if everything works as it should
     
     
 ## Note
